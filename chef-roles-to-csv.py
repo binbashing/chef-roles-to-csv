@@ -6,7 +6,7 @@ import argparse
 
 # Parse arguements
 parser = argparse.ArgumentParser()
-parser.add_argument('-o', '--outfile', '-o', help='Output File', required=True)
+parser.add_argument('-o', '--outfile', help='Output File', required=True)
 args = parser.parse_args()
 output_csv = (args.outfile)
 
