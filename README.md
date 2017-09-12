@@ -13,7 +13,7 @@ Dependencies include:
 
 These should be available via pip/easy_install.
 
-A configured [knife] (https://docs.chef.io/config_rb_knife.html) command 
+A configured [knife](https://docs.chef.io/config_rb_knife.html) command 
 ## Usage
 ```
 python chef-roles-to-csv.py -h
