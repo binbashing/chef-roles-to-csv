@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 from commands import getoutput
 import json
 import unicodecsv as csv
@@ -58,8 +60,11 @@ def get_all_nodes():
 
 
 # Main Function
-all_nodes = get_all_nodes()
-for node in all_nodes:
-    node_roles = get_roles(node)
-    master_list.append(node_roles)
-all_to_csv(master_list, output_csv)
+def main():
+    all_nodes = get_all_nodes()
+    for node in all_nodes:
+        node_roles = get_roles(node)
+        master_list.append(node_roles)
+    all_to_csv(master_list, output_csv)
+
+main()
